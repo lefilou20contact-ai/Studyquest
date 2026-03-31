@@ -1615,6 +1615,20 @@ init();
     navigator.serviceWorker.register('sw.js')
   }
 </script>
+  <script>
+// Enregistrer le Service Worker
+if ('serviceworker' in navigator) {
+window. addEventListener('load', () => {
+navigator. serviceworker.register('/sw.js')
+. then(registration => {
+console. log ('Serviceworker enregistré :', registration. scope);
+})
+. catch(error => {
+console. log ('Échec de l\'enregistrement :', error);
+}) ;
+}) ;
+}
+</script>
 
 </body>
 </html>
