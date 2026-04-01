@@ -1,0 +1,15 @@
+{
+  "background_color": "#0f0f1a",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "StudyQuest",
+  "orientation": "any",
+  "scope": "https://lefilou20contact-ai.github.io/Studyquest/",
+  "short_name": "StudyQuest",
+  "start_url": "https://lefilou20contact-ai.github.io/Studyquest/",
+  "theme_color": "#0f0f1a",
+  "lang": "fr",
+  "categories": [
+    "education"
+  ]
+}
