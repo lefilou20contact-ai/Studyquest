@@ -2,18 +2,17 @@
   "background_color": "#0f0f1a",
   "dir": "ltr",
   "display": "standalone",
-  "name": "StudyQuest",
-  "short_name": "StudyQuest",
-  "description": "Mon app de révision personnalisée — Maths, Français, Histoire, Sciences et plus !",
-  "lang": "fr",
+  "name": "Studyquest",
   "orientation": "any",
-  "scope": "https://lefilou20contact-ai.github.io/Studyquest/",
-  "start_url": "https://lefilou20contact-ai.github.io/Studyquest/",
-  "theme_color": "#e94560",
-  "background_color": "#0f0f1a",
-  "id": "studyquest-lefilou20",
-  "categories": ["education"],
-  "icons": [
+  "scope": "/",
+  "short_name": "StudyQuest",
+  "start_url": "https://lefilou20contact-ai.github.io/Studyquest//",
+  "theme_color": "#0f0f1a",
+  "lang": "fr",
+  "categories": [
+    "education"
+  ]
+}
     {
       "src": "launchericon-48x48.png",
       "sizes": "48x48",
