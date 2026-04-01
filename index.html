@@ -1631,4 +1631,11 @@ console. log ('Échec de l\'enregistrement :', error);
 </script>
 
 </body>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/Studyquest/sw.js')
+      .then(() => console.log('SW enregistré'))
+      .catch(err => console.log('SW erreur:', err));
+  }
+</script>
 </html>
