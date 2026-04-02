@@ -1,0 +1,54 @@
+{
+  "background_color": "#0f0f1a",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "StudyQuest",
+  "short_name": "StudyQuest",
+  "description": "Mon app de révision personnalisée — Maths, Français, Histoire et plus !",
+  "lang": "fr",
+  "orientation": "any",
+  "scope": "./",
+  "start_url": "./",
+  "theme_color": "#e94560",
+  "id": "studyquest-v1",
+  "categories": ["education"],
+  "icons": [
+    {
+      "src": "launchericon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "launchericon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "launchericon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "launchericon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "launchericon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "launchericon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "prefer_related_applications": false
+}
