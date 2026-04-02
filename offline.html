@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hors ligne - Studyquest</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #000000;
+      color: #ffffff;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #1a1a2e;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+      color: #ffd700;
+    }
+    .icon {
+      font-size: 50px;
+      margin-bottom: 20px;
+      color: #ffd700;
+    }
+    .retry-button {
+      background-color: #ffd700;
+      color: #000000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .retry-button:hover {
+      background-color: #daa520;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">⚠️</div>
+    <h1>Vous êtes hors ligne</h1>
+    <p>Il semble que vous n'ayez pas de connexion Internet. Veuillez vérifier votre connexion et réessayer.</p>
+    <button class="retry-button" onclick="window.location.reload()">Réessayer</button>
+  </div>
+  <script>
+    window.addEventListener('online', () => {
+      window.location.reload();
+    });
+  </script>
+</body>
+</html>
