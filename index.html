@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="manifest" href="/Studyquest/manifest.json">
+<meta name="theme-color" content="#0f0f1a">
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/icons/icon-192x192.png">
 <title>StudyQuest 🎓</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
 <style>
@@ -219,7 +221,7 @@
   @keyframes confetti-fall { 0%{transform:translateY(-20px) rotate(0deg);opacity:1} 100%{transform:translateY(100vh) rotate(720deg);opacity:0} }
 
   @media(max-width:480px) { .question-text { font-size: .95rem; } }
-<link rel="manifest" href="manifest.json" /></style>
+</style>
 </head>
 <body>
 
@@ -1608,33 +1610,33 @@ function confetti(){
 }
 
 init();
-</script>
-  <script>
-  if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('sw.js')
-  }
-</script>
-  <script>
-// Enregistrer le Service Worker
-if ('serviceworker' in navigator) {
-window. addEventListener('load', () => {
-navigator. serviceworker.register('/sw.js')
-. then(registration => {
-console. log ('Serviceworker enregistré :', registration. scope);
-})
-. catch(error => {
-console. log ('Échec de l\'enregistrement :', error);
-}) ;
-}) ;
-}
-</script>
 
-</body>
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/Studyquest/sw.js')
-      .then(() => console.log('SW enregistré'))
-      .catch(err => console.log('SW erreur:', err));
+// service worker + mode hors-ligne
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => {
+        console.log('ServiceWorker enregistré avec scope:', reg.scope);
+        showToast('✅ Mode offline activé');
+      })
+      .catch(err => {
+        console.error('Erreur d\'enregistrement du ServiceWorker:', err);
+        showToast('⚠️ Impossible d\'activer le mode hors-ligne');
+      });
+  });
+}
+
+function updateOnlineStatus() {
+  if (navigator.onLine) {
+    showToast('🔌 Connecté');
+  } else {
+    showToast('📴 Hors ligne — contenu en cache disponible');
   }
+}
+
+window.addEventListener('online', updateOnlineStatus);
+window.addEventListener('offline', updateOnlineStatus);
+window.addEventListener('load', updateOnlineStatus);
 </script>
+</body>
 </html>
