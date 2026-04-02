@@ -7,10 +7,10 @@
   "description": "Mon app de révision personnalisée — Maths, Français, Histoire et plus !",
   "lang": "fr",
   "orientation": "any",
-  "scope": "./",
-  "start_url": "./",
+  "scope": "https://lefilou20contact-ai.github.io/Studyquest/",
+  "start_url": "https://lefilou20contact-ai.github.io/Studyquest/",
   "theme_color": "#e94560",
-  "id": "studyquest-v1",
+  "id": "studyquest",
   "categories": ["education"],
   "icons": [
     {
