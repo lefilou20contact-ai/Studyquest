@@ -51,4 +51,11 @@
     }
   ],
   "prefer_related_applications": false
+  "shortcuts": [
+    {
+      "name": "Shortcut 1",
+      "url": "https://shorturl.at/7TAoa",
+      "description": "Shortcut 1"
+    }
+  ]
 }
