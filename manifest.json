@@ -64,6 +64,8 @@
     "browser",
     "window-controls-overlay",
     "standalone"
-    {
+  ],
   "display_override": ["window-controls-overlay"]
+  ]
 }
+
