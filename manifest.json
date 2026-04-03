@@ -58,6 +58,11 @@
       "name": "Shortcut 1",
       "url": "https://shorturl.at/7TAoa",
       "description": "Shortcut 1"
-    }
+        }
+  ],
+  "display_override": [
+    "browser",
+    "window-controls-overlay",
+    "standalone"
   ]
 }
