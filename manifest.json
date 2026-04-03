@@ -11,7 +11,9 @@
   "start_url": "https://lefilou20contact-ai.github.io/Studyquest/",
   "theme_color": "#e94560",
   "id": "studyquest",
-  "categories": ["education"],
+  "categories": [
+    "education"
+  ],
   "icons": [
     {
       "src": "launchericon-48x48.png",
@@ -50,7 +52,7 @@
       "purpose": "any maskable"
     }
   ],
-  "prefer_related_applications": false
+  "prefer_related_applications": false,
   "shortcuts": [
     {
       "name": "Shortcut 1",
