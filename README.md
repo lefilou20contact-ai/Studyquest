@@ -1,2 +1,2 @@
 # Studyquest
-# une application fait par un etudiant pour etudie
+ une application fait par un etudiant pour étudie
