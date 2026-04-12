@@ -49,6 +49,13 @@
       "type": "image/jpeg",
       "form_factor": "narrow",
       "label": "StudyQuest Accueil"
+    }, 
+    {
+      "src": "IMG_1197.jpeg",
+      "sizes": "1080x2276",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "StudyQuest Accueil"
     }
   ],
   "share_target": {
