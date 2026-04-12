@@ -45,8 +45,8 @@
   "screenshots": [
     {
       "src": "IMG_1197.jpeg",
-      "sizes": "512x512",
-      "type": "image/png",
+      "sizes": "1080x2276",
+      "type": "image/jpeg",
       "form_factor": "narrow",
       "label": "StudyQuest Accueil"
     }
