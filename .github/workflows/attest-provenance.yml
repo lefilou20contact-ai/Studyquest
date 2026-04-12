@@ -1,0 +1,29 @@
+name: Generate provenance attestation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  attest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create source archive
+        run: tar --exclude='.git' --exclude='.github' -czf studyquest-source.tar.gz .
+
+      - name: Generate provenance attestation
+        id: attest
+        uses: .
+        with:
+          subject-path: studyquest-source.tar.gz
+          show-summary: true
+          github-token: ${{ github.token }}
+
+      - name: Print attestation summary URL
+        run: echo "Attestation URL: ${{ steps.attest.outputs.attestation-url }}"

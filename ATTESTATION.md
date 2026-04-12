@@ -22,6 +22,23 @@ initiated.
 Attestations can be verified using the [`attestation` command in the GitHub
 CLI][5].
 
+Example:
+
+```bash
+gh attestation verify actions-attest-build-provenance-attestation-19932634.sigstore.json
+```
+
+This repository also includes a workflow to generate attestations automatically on
+push or via manual dispatch:
+
+- `.github/workflows/attest-provenance.yml`
+
+If you want to verify an OCI image instead of a local file, use the image URI:
+
+```bash
+gh attestation verify oci://ghcr.io/<owner>/<repo>/<image>:<tag> --owner <owner> --repo <repo>
+```
+
 See [Using artifact attestations to establish provenance for builds][6] for more
 information on artifact attestations.
 
