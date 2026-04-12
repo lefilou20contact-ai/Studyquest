@@ -7,7 +7,10 @@
   "start_url": "https://lefilou20contact-ai.github.io/Studyquest/",
   "scope": "https://lefilou20contact-ai.github.io/Studyquest/",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone"]
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
   "orientation": "any",
   "theme_color": "#e94560",
   "background_color": "#0f0f1a",
