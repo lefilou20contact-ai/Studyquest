@@ -9,7 +9,8 @@
   "display": "standalone",
   "display_override": [
     "window-controls-overlay",
-    "standalone"
+    "standalone",
+    "tabbed"
   ],
   "orientation": "any",
   "theme_color": "#e94560",
