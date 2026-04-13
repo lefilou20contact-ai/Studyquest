@@ -1,0 +1,31 @@
+name: Attest Build Provenance
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  attestations: write
+  id-token: write
+
+jobs:
+  attest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate SHA256 of index.html
+        id: hash
+        run: |
+          echo "digest=sha256:$(sha256sum index.html | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v4
+        with:
+          subject-path: index.html
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          show-summary: true
