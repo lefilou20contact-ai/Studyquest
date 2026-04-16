@@ -1,0 +1,47 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Medium",
+      "weight": "Bolder",
+      "text": "📚 StudyQuest",
+      "horizontalAlignment": "Center",
+      "color": "Accent"
+    },
+    {
+      "type": "TextBlock",
+      "text": "${message}",
+      "wrap": true,
+      "size": "Small",
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "TextBlock",
+      "spacing": "Small",
+      "text": "⭐ XP : ${xp}  |  🔥 Série : ${streak}  |  🎓 Niv. ${level}",
+      "size": "Small",
+      "color": "Good",
+      "horizontalAlignment": "Center"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Execute",
+      "title": "🚀 Réviser",
+      "verb": "open-app"
+    },
+    {
+      "type": "Action.Execute",
+      "title": "⚡ Quiz",
+      "verb": "open-quiz"
+    },
+    {
+      "type": "Action.Execute",
+      "title": "📸 Scanner",
+      "verb": "open-scan"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.5"
+}
