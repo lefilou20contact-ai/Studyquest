@@ -155,14 +155,10 @@
       "multiple": false,
       "icons": [
         {
-          "src": "launchericon-192x192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        },
-        {
-          "src": "launchericon-512x512.png",
-          "sizes": "512x512",
-          "type": "image/png"
+          "small": "Icônes-Windows/SmallTile.scale-200.png",
+          "medium": "Icônes-Windows/Square150x150Logo.scale-200.png",
+          "large": "Icônes-Windows/LargeTile.scale-200.png",
+          "wide": "Icônes-Windows/Wide310x150Logo.scale-200.png"
         }
       ],
       "screenshots": [
