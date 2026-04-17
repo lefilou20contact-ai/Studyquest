@@ -1377,7 +1377,138 @@ const ALL_SUBJECTS = {
     {front:"Créatine",back:"Molécule naturelle qui recharge rapidement l'ATP — légale, améliore les efforts courts"},
     {front:"Contre-attaque",back:"Transition défense → attaque rapide après récupération du ballon"},
   ]}
-  }}
+  }},
+  coding': {
+    name:'Coding 💻', icon:'💻', color:'#00bcd4',
+    data: {
+      'CM1': {
+        questions:[
+          {q:"Qu'est-ce qu'un algorithme ?", opts:['Un robot','Une suite d\'instructions pour résoudre un problème','Un ordinateur','Un langage'], ans:1, img:'📋'},
+          {q:"Dans Scratch, un 'sprite' est :", opts:['Un son','Un personnage ou objet programmable','Un fond','Un script'], ans:1, img:'🐱'},
+          {q:"Une boucle sert à :", opts:['Dessiner','Répéter des instructions','Stopper le programme','Afficher du texte'], ans:1, img:'🔄'},
+          {q:"Une condition 'si... alors' exécute du code :", opts:['Toujours','Jamais','Seulement si la condition est vraie','Au hasard'], ans:2, img:'❓'},
+          {q:"Un pixel est :", opts:['Un son','La plus petite unité d\'une image','Un personnage','Un fichier'], ans:1, img:'🖥️'},
+          {q:"Ctrl+Z sert à :", opts:['Copier','Coller','Annuler','Enregistrer'], ans:2, img:'↩️'},
+          {q:"Dans Scratch, 'répéter 10 fois' est :", opts:['Une condition','Une boucle bornée','Un événement','Une variable'], ans:1, img:'🔁'},
+          {q:"Une variable stocke :", opts:['Un dessin','Une valeur qu\'on peut changer','Un programme','Une image'], ans:1, img:'📦'},
+          {q:"Un ordinateur lit les instructions :", opts:['De droite à gauche','Du bas en haut','De haut en bas','Au hasard'], ans:2, img:'💻'},
+          {q:"Coder c'est :", opts:['Dessiner','Écrire des instructions pour un ordinateur','Réparer un ordinateur','Naviguer sur internet'], ans:1, img:'⌨️'},
+        ],
+        flashcards:[
+          {front:'Algorithme', back:'Suite d\'instructions précises pour résoudre un problème'},
+          {front:'Boucle', back:'Répète un bloc d\'instructions plusieurs fois'},
+          {front:'Condition (si/alors)', back:'Exécute du code seulement si une condition est vraie'},
+          {front:'Variable', back:'Boîte qui stocke une valeur (nombre, texte...)'},
+          {front:'Sprite (Scratch)', back:'Personnage ou objet programmable dans Scratch'},
+        ]
+      },
+      'CM2': {
+        questions:[
+          {q:"En binaire, 1+1 = ?", opts:['2','10','11','0'], ans:1, img:'🔢'},
+          {q:"Un octet contient combien de bits ?", opts:['4','8','16','32'], ans:1, img:'💾'},
+          {q:"En Python, print('Bonjour') :", opts:['Stocke du texte','Affiche Bonjour à l\'écran','Efface l\'écran','Crée une variable'], ans:1, img:'🐍'},
+          {q:"La couleur rouge en HTML est :", opts:['#0000FF','#00FF00','#FF0000','#FFFFFF'], ans:2, img:'🔴'},
+          {q:"Un 'bug' est :", opts:['Un insecte réel','Une erreur dans un programme','Un virus informatique','Un fichier corrompu'], ans:1, img:'🐛'},
+          {q:"HTML signifie :", opts:['High Text Modern Language','HyperText Markup Language','Home Tool Machine Learning','HyperText Modern Link'], ans:1, img:'🌐'},
+          {q:"En Python, # est utilisé pour :", opts:['Multiplier','Écrire un commentaire','Créer une liste','Importer un module'], ans:1, img:'💬'},
+          {q:"Une liste Python s'écrit :", opts:['(1,2,3)','[1,2,3]','{1,2,3}','<1,2,3>'], ans:1, img:'📝'},
+          {q:"En Scratch, 'quand espace pressé' est :", opts:['Une boucle','Un événement déclencheur','Une condition','Une variable'], ans:1, img:'⌨️'},
+          {q:"Un programme s'arrête quand :", opts:['L\'ordinateur chauffe','Il a exécuté toutes ses instructions','L\'écran s\'éteint','La souris bouge'], ans:1, img:'🏁'},
+        ],
+        flashcards:[
+          {front:'Binaire', back:'Système en base 2 : 0 et 1 — 1 octet = 8 bits'},
+          {front:'Bug', back:'Erreur dans un programme qui cause un comportement inattendu'},
+          {front:'HTML', back:'Langage de balisage pour créer des pages web'},
+          {front:'Python print()', back:'Affiche du texte ou une valeur dans la console'},
+          {front:'Commentaire Python (#)', back:'Ligne commençant par # — ignorée par Python, explique le code'},
+        ]
+      },
+      '6ème': {
+        questions:[
+          {q:"En Python, que retourne range(5) ?", opts:['[1,2,3,4,5]','[0,1,2,3,4]','[5]','[0,5]'], ans:1, img:'🐍'},
+          {q:"La balise HTML pour un titre principal est :", opts:['<p>','<title>','<h1>','<head>'], ans:2, img:'🌐'},
+          {q:"Quel opérateur teste l'égalité en Python ?", opts:['=','==','===','!='], ans:1, img:'⚖️'},
+          {q:"Une fonction Python se définit avec :", opts:['function','def','fun','define'], ans:1, img:'🔧'},
+          {q:"En CSS, 'color: red;' change :", opts:['La couleur de fond','La couleur du texte','La taille de la police','La bordure'], ans:1, img:'🎨'},
+          {q:"for i in range(3) répète combien de fois ?", opts:['1','2','3','4'], ans:2, img:'🔄'},
+          {q:"len([1,2,3,4]) retourne :", opts:['1','3','4','[4]'], ans:2, img:'📏'},
+          {q:"En HTML, <a href='...'>lien</a> crée :", opts:['Une image','Un titre','Un lien hypertexte','Un bouton'], ans:2, img:'🔗'},
+          {q:"input() en Python sert à :", opts:['Afficher du texte','Lire ce que l\'utilisateur tape','Créer une liste','Importer un module'], ans:1, img:'⌨️'},
+          {q:"Un fichier .py contient :", opts:['Du code HTML','Du code Python','Du code CSS','Une image'], ans:1, img:'📄'},
+        ],
+        flashcards:[
+          {front:'def (Python)', back:'Définit une fonction : def ma_fonction(): ... return résultat'},
+          {front:'for i in range(n)', back:'Boucle qui répète n fois — i prend les valeurs 0,1,...,n-1'},
+          {front:'Balises HTML essentielles', back:'<h1>-<h6> titres | <p> paragraphe | <a> lien | <img> image | <div> bloc'},
+          {front:'CSS (base)', back:'sélecteur { propriété: valeur; } — color, background, font-size, margin, padding'},
+          {front:'len() Python', back:'Retourne la longueur d\'une liste, d\'une chaîne ou d\'un tuple'},
+        ]
+      },
+      '5ème': {
+        questions:[
+          {q:"append() sur une liste Python :", opts:['Supprime le dernier élément','Ajoute un élément à la fin','Trie la liste','Retourne la longueur'], ans:1, img:'➕'},
+          {q:"En CSS, 'display: flex' sert à :", opts:['Cacher un élément','Créer une mise en page flexible','Changer la couleur','Animer un élément'], ans:1, img:'🎨'},
+          {q:"str(42) en Python retourne :", opts:['42','\"42\"','True','[42]'], ans:1, img:'🔤'},
+          {q:"Une exception Python se gère avec :", opts:['if/else','for/while','try/except','def/return'], ans:2, img:'⚠️'},
+          {q:"Le protocole HTTPS est :", opts:['HTTP sans sécurité','HTTP avec chiffrement SSL/TLS','Un protocole email','Un type de fichier'], ans:1, img:'🔒'},
+          {q:"En JavaScript, document.getElementById() :", opts:['Crée un élément HTML','Sélectionne un élément par son id','Supprime un élément','Ajoute un style CSS'], ans:1, img:'🌐'},
+          {q:"JSON signifie :", opts:['JavaScript Object Notation','Java Secured Object Node','Just Some Other Name','JavaScript Open Node'], ans:0, img:'📄'},
+          {q:"En Python, un dictionnaire s'écrit :", opts:['[clé:valeur]','(clé,valeur)','{\"clé\": valeur}','<clé=valeur>'], ans:2, img:'📖'},
+          {q:"Une API REST utilise les méthodes :", opts:['GET, POST, PUT, DELETE','SEND, RECEIVE, UPLOAD','READ, WRITE, EXECUTE','FETCH, PUSH, PULL'], ans:0, img:'🔌'},
+          {q:"React est :", opts:['Un langage de programmation','Une bibliothèque JavaScript pour les interfaces','Un serveur web','Un système d\'exploitation'], ans:1, img:'⚛️'},
+        ],
+        flashcards:[
+          {front:'Liste Python (méthodes)', back:'append() ajouter | remove() supprimer | sort() trier | len() longueur | pop() retirer le dernier'},
+          {front:'try/except Python', back:'try: code risqué | except Exception as e: gestion de l\'erreur'},
+          {front:'Dictionnaire Python', back:'{\"clé\": valeur} — accès par d[\"clé\"] — mutable — méthodes : keys(), values(), items()'},
+          {front:'JavaScript DOM', back:'document.querySelector() | getElementById() | addEventListener() | innerHTML'},
+          {front:'HTTPS et SSL/TLS', back:'Chiffrement des données entre client et serveur — cadenas dans le navigateur'},
+        ]
+      },
+      '4ème': {
+        questions:[
+          {q:"La complexité O(n) signifie :", opts:['Temps constant','Temps linéaire','Temps quadratique','Temps logarithmique'], ans:1, img:'⏱️'},
+          {q:"Une classe Python est définie avec :", opts:['def','function','class','object'], ans:2, img:'🏗️'},
+          {q:"__init__ est :", opts:['Une variable globale','Le constructeur d\'une classe Python','Une boucle','Un module'], ans:1, img:'⚙️'},
+          {q:"Git commit sert à :", opts:['Supprimer des fichiers','Enregistrer un instantané du code','Envoyer le code en ligne','Créer une branche'], ans:1, img:'📸'},
+          {q:"En Python, self dans une classe fait référence à :", opts:['La classe parent','L\'instance courante de la classe','Un module externe','Une fonction statique'], ans:1, img:'🪞'},
+          {q:"Le principe DRY signifie :", opts:['Don\'t Repeat Yourself','Do Run Yesterday','Data Reads Yearly','Define Run Yield'], ans:0, img:'♻️'},
+          {q:"Une fonction récursive :", opts:['Ne s\'arrête jamais','S\'appelle elle-même avec un cas de base','Est toujours plus rapide','N\'utilise pas de variables'], ans:1, img:'🔄'},
+          {q:"Git push sert à :", opts:['Télécharger le code','Envoyer les commits vers le dépôt distant','Créer une branche','Fusionner des branches'], ans:1, img:'📤'},
+          {q:"Une base de données SQL utilise :", opts:['print()','SELECT, INSERT, UPDATE, DELETE','def, class','for, while'], ans:1, img:'🗄️'},
+          {q:"TypeScript est :", opts:['Un nouveau langage distinct','JavaScript avec typage statique','Un framework CSS','Un serveur web'], ans:1, img:'🔷'},
+        ],
+        flashcards:[
+          {front:'POO - Classe / Instance', back:'class Animal: définit le modèle | chien = Animal() crée une instance'},
+          {front:'Complexité algorithmique', back:'O(1) constant | O(log n) logarithmique | O(n) linéaire | O(n²) quadratique'},
+          {front:'Git (bases)', back:'init → add → commit → push | branch pour branches | merge pour fusionner'},
+          {front:'SQL (bases)', back:'SELECT * FROM table | INSERT INTO | UPDATE SET WHERE | DELETE FROM WHERE'},
+          {front:'Récursivité', back:'Fonction qui s\'appelle elle-même — doit avoir un cas de base pour s\'arrêter'},
+        ]
+      },
+      '3ème': {
+        questions:[
+          {q:"Le tri rapide (quicksort) a une complexité moyenne :", opts:['O(n)','O(n log n)','O(n²)','O(1)'], ans:1, img:'⚡'},
+          {q:"async/await en JavaScript sert à :", opts:['Accélérer le code','Gérer le code asynchrone proprement','Créer des classes','Définir des constantes'], ans:1, img:'⏳'},
+          {q:"Docker est :", opts:['Un langage de programmation','Un outil de conteneurisation d\'applications','Un framework JavaScript','Un SGBD'], ans:1, img:'🐳'},
+          {q:"Le pattern MVC sépare :", opts:['Front et Back','Modèle, Vue, Contrôleur','Client et Serveur','HTML, CSS, JS'], ans:1, img:'🏗️'},
+          {q:"Une API RESTful est :", opts:['Toujours en temps réel','Stateless (sans état côté serveur)','Toujours sécurisée','Uniquement en JSON'], ans:1, img:'🔌'},
+          {q:"Le chiffrement asymétrique utilise :", opts:['Une seule clé partagée','Une clé publique et une clé privée','Un mot de passe','Un hash uniquement'], ans:1, img:'🔑'},
+          {q:"Un test unitaire vérifie :", opts:['L\'interface utilisateur entière','Une seule fonction ou méthode isolée','La base de données','Le réseau'], ans:1, img:'🧪'},
+          {q:"WebSocket permet :", opts:['Des requêtes HTTP classiques','Une communication bidirectionnelle temps réel','Du stockage local','De l\'authentification OAuth'], ans:1, img:'📡'},
+          {q:"Le principe SOLID (S) signifie :", opts:['Single Responsibility Principle','Secure Object Listing Interface Design','Simple Open Linked Interface Development','Structured Object Linked Interface Design'], ans:0, img:'⚖️'},
+          {q:"GraphQL comparé à REST :", opts:['Est plus lent','Utilise un seul endpoint et des requêtes flexibles','Nécessite plus de requêtes','Est uniquement pour mobile'], ans:1, img:'🔗'},
+        ],
+        flashcards:[
+          {front:'async/await (JavaScript)', back:'async function → retourne une Promise | await attend la résolution — évite le callback hell'},
+          {front:'Pattern MVC', back:'Modèle = données/BDD | Vue = affichage HTML | Contrôleur = logique métier'},
+          {front:'REST vs GraphQL', back:'REST : endpoints fixes, plusieurs requêtes | GraphQL : endpoint unique, requête précise'},
+          {front:'Docker', back:'Conteneur = app + dépendances isolées — fonctionne partout identiquement'},
+          {front:'SOLID', back:'S=Single Responsibility | O=Open/Closed | L=Liskov | I=Interface Segregation | D=Dependency Inversion'},
+        ]
+      }
+    }
+  }
 };
 
 // ===== BADGES =====
