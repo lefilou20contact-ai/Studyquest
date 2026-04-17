@@ -155,10 +155,10 @@
       "multiple": false,
       "icons": [
         {
-          "small": "Icônes-Windows/SmallTile.scale-200.png",
-          "medium": "Icônes-Windows/Square150x150Logo.scale-200.png",
-          "large": "Icônes-Windows/LargeTile.scale-200.png",
-          "wide": "Icônes-Windows/Wide310x150Logo.scale-200.png"
+          "small": "icones-windows/SmallTile.scale-200.png",
+          "medium": "icones-windows/Square150x150Logo.scale-200.png",
+          "large": "icones-windows/LargeTile.scale-200.png",
+          "wide": "icones-windows/Wide310x150Logo.scale-200.png"
         }
       ],
       "screenshots": [
